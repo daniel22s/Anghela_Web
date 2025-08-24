@@ -9,27 +9,29 @@
     <link rel="stylesheet" href="./css/estilos.css">
 </head>
 <body>
-    <header class="hero">
+    <header class="hero" id="inicio">
     <nav class="nav container">
         <div class="nav_logo">
-            <h2 class="nav_title">Arq. Anghela.</h2>
+            <h2 class="nav_title">Arq. Anghela Juarez Quispe</h2>
         </div>
 
         <ul class="nav_link nav_link--menu">
             <li class="nav_items">
-                <a href="#" class="nav_links">Inicio</a>
+                <a href="#inicio" class="nav_links">Inicio</a>
             </li>
             <li class="nav_items">
-                <a href="#" class="nav_links">Proyectos</a>
+                <a href="#proyectos" class="nav_links">Proyectos</a>
             </li>
             <li class="nav_items">
-                <a href="#" class="nav_links">Contacto</a>
+                <a href="#contacto" class="nav_links">Contacto</a>
             </li>
             <li class="nav_items">
-                <a href="#" class="nav_links">Blog</a>
+                <a href="#blog" class="nav_links">Blog</a>
             </li>
-            <img src="./images/close.svg" alt="close" class="nav_close">
+            
         </ul>
+
+        <img src="./images/close.svg" alt="close" class="nav_close">
 
         <div class="nav_menu">
             <img src="./images/menu.svg" alt="menu" class="nav_img">
@@ -41,13 +43,13 @@
             <h1 class="hero_title">Diseñando espacios que inspiran</h1>
             <p class="hero_paragraph">Soy arquitecta apasionada por transformar ideas en proyectos únicos.  
       Mi compromiso es crear ambientes funcionales, estéticos y hechos a tu medida.</p>
-            <a href="#" class="cta">Contáctame</a>
+            <a href="https://wa.me/51904613617" class="cta">Contáctame</a>
         </div>
     </section>
 </header>
 
  <main>
-    <section class="container about">
+    <section class="container about" id="blog"> 
         <h2 class="subtitle">Sobre mí</h2>
         <p class="about__paragraph"> Soy Anghela, arquitecta con experiencia en el diseño de proyectos residenciales, comerciales y urbanos.  
         Me apasiona crear espacios que combinen estética y funcionalidad, siempre adaptados a las necesidades y estilo de cada cliente.  
@@ -87,6 +89,85 @@
 
         </div>
     </section>
+
+    <section class="projects container" id="proyectos">
+        <h2 class="subtitle">Proyectos Recientes</h2>
+        <div class="projects__grid">
+            <article class="project__card">
+            <img src="./images/proyecto1.jpg" alt="Proyecto 1">
+            <h3 class="project__title">Banco de la Nacion</h3>
+            <p class="project__paragraph">Diseño residencial enfocado en espacios abiertos y luminosos.</p>
+            </article>
+            <article class="project__card">
+            <img src="./images/proyecto2.jpg" alt="Proyecto 2">
+            <h3 class="project__title">Casa Moderna</h3>
+            <p class="project__paragraph">Optimización del espacio para productividad y confort.</p>
+            </article>
+            <article class="project__card">
+            <img src="./images/proyecto1.jpg" alt="Proyecto 1">
+            <h3 class="project__title">Banco de la Nacion</h3>
+            <p class="project__paragraph">Diseño residencial enfocado en espacios abiertos y luminosos.</p>
+            </article>
+            <article class="project__card">
+            <img src="./images/proyecto2.jpg" alt="Proyecto 2">
+            <h3 class="project__title">Casa Moderna</h3>
+            <p class="project__paragraph">Optimización del espacio para productividad y confort.</p>
+            </article>
+            <!-- Más proyectos -->
+        </div>
+    </section>
+<section class="contact" id="contacto">
+  <div class="contact__header">
+    <h2 class="contact__title">Contáctame</h2>
+    <p class="contact__paragraph">¿Tienes alguna consulta o proyecto en mente? ¡Estoy aquí para ayudarte!</p>
+  </div>
+
+  <div class="contact__grid">
+    <!-- Formulario -->
+    <form class="contact__form" action="https://formspree.io/f/xwpnelny" method="POST" id="contactForm">
+      <input type="text" name="nombre" placeholder="Nombre" required>
+      <input type="email" name="correo" placeholder="Correo" required>
+      <textarea name="mensaje" placeholder="Mensaje" rows="5" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+
+    <!-- Popup de confirmación -->
+    <div id="formMessage" class="form-message">¡Gracias! Tu mensaje ha sido enviado.</div>
+
+    <!-- Información de contacto -->
+    <div class="contact__info">
+      <h3>Información de contacto</h3>
+      <p><strong>Teléfono:</strong> +51 904 613 617</p>
+      <p><strong>Correo:</strong> arqanghelajuarez@gmail.com</p>
+      <p><strong>Ubicación:</strong> Lima, Perú</p>
+
+      <div class="contact__social">
+        <a href="#" aria-label="Instagram">Instagram</a>
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        <a href="#" aria-label="Pinterest">Pinterest</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
  </main>
+ <footer class="footer">
+  <div class="footer__inner container">
+    <p>© 2025 Arq. Anghela Juarez Quispe - Todos los derechos reservados.</p>
+    <div class="footer__social">
+      <a href="#" aria-label="Instagram">
+      </a>
+      <a href="#" aria-label="LinkedIn">
+      </a>
+      <a href="#" aria-label="Pinterest">
+      </a>
+    </div>
+  </div>
+</footer>
+  <script src="./js/envio.js"></script>
+
+
 </body>
 </html>
